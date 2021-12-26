@@ -1,0 +1,15 @@
+npm install -g sequelize-clise
+sequelize init 
+sequelize db:create
+npm install --save-dev noop2
+npm install pg pg-hstore
+sequelize model:generate --name User --attributes name:string,email:string
+npm i express --save
+node app to run
+sequelize db:drop
+sequelize db:migrate
+sequelize model:generate --name Post --attributes body:string
+sequelize db:migrate:status
+sequelize db:migrate:undo
+sequelize seed:generate --name create-fake-users
+sequelize db:seed:all
